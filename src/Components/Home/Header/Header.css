@@ -1,0 +1,20 @@
+.header-container{
+    position: relative;
+    height: 800px;
+    z-index: 5;
+    overflow: hidden;
+    background-image: url(../../../image/Chair.bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.header-container::after{
+    height: 700px;
+    width:30%;
+    background-color: #3a4256;
+    top:0;
+    right:0;
+    position: absolute;
+    content: "";
+   z-index: -50;
+    overflow: hidden;
+}

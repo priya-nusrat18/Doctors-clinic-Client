@@ -1,0 +1,8 @@
+ .card{
+    border-color: transparent;
+}
+
+ .card .card-footer{
+    background: transparent;
+    border: 0;
+}
