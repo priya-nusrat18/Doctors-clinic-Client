@@ -1,0 +1,27 @@
+.react-calendar {
+    border: none;
+  
+}
+.rcalendar-wrap{
+    transform:translateY(-80px) !important;
+  position:absolute;
+  z-index: 9;
+}
+button.react-calendar__tile.react-calendar__tile--now.react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day {
+    background: #1cc7c1 !important;
+}
+.react-calendar__navigation {margin-bottom: 30px !important;}
+.appoinmemt-header{
+
+    overflow: hidden;
+  
+    background-image: url(../../../image//Chair.bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.text-brand{
+    color:#1cc7c1
+}
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+    z-index: 10;
+}

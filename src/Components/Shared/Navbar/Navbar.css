@@ -6,7 +6,9 @@ nav.navbar.navbar-expand-lg.navbar-light {
     width: 100%;
     
 }
-
+a.navbar-brand {
+    font-weight: 600;
+}
 .nav-link{
     color: #000 !important;
     font-size: 18px !important;
@@ -22,26 +24,12 @@ nav.navbar.navbar-expand-lg.navbar-light {
     width: fit-content;
 }
 .nav-link:focus{
-    color:#fff !important;
+    color: #1cc7c1 !important;
     border-bottom: 2px solid  #fff;
     width: fit-content;
 }
-.login-btn{
-    color:white !important;
-    background-color:  #5FAF4B;
-    padding: 3px 20px !important;
-    border-radius: 6px;
-    line-height: 34px;
-    width: fit-content;
-}
-.login-btn:hover{
-    border-bottom: 2px solid transparent;
-    opacity: .8;
-    color: white !important;
-}
-.login-btn:focus{
-    color: white !important;
-}
+
+
 
 @media  only screen and  (min-width :992px ){
     .logo {

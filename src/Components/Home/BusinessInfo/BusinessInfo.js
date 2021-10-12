@@ -24,7 +24,7 @@ background: 'primary'
     ]
     return (
       <section className='d-flex justify-content-center'>
-          <div className="row w-75"> 
+          <div className="row info-row w-75"> 
           {
             BusinessInfos.map( info => <BusinessInfoCard info={info} />)
           }

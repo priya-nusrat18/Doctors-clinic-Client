@@ -3,7 +3,8 @@ import React from 'react';
 const BlogPost = (props) => {
     const {title, description, author, authorImg , date} = props.blog;
     return (
-        <div className="card shadow-sm">
+        <div className="col-md-4 col-sm-6 col-12">
+            <div className="card shadow-sm mb-2">
             <div className="card-header d-flex  align-items-center">
                 <img className="mx-3" src={authorImg} alt="" width="60"/>
                 <div>
@@ -11,12 +12,13 @@ const BlogPost = (props) => {
                     <p className="m-0">{date}</p>
                 </div>
             </div>
-            <div className="card-body">
+            <div className="card-body blog-card-body">
                 <h5>{title}</h5>
                 <p className="card-text text-secondary mt-4">{description}</p>
             </div>
             
        </div>
+        </div>
     );
 };
 

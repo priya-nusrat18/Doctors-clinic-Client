@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const FooterCol = (props) => {
     return (
-        <div className="col-md-3">
+        <div className="col-md-3 single-footer-area">
             <h6 className="text-primary">{props.menuTitle ? props.menuTitle : " "}</h6>
             <ul className="list-unstyled mt-4">
                  {
