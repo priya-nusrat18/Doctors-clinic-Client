@@ -17,7 +17,7 @@ const [appoinments , setAppoinments] = useState([])
     }
 
     useEffect(() =>{
-        fetch('http://localhost:5000/appoinmentsByDate',{
+        fetch('https://peaceful-sierra-17047.herokuapp.com/appoinmentsByDate',{
             method : 'POST',
             headers:{'Content-Type': 'application/json'},
             body: JSON.stringify({date : selectedDate , email : email})
