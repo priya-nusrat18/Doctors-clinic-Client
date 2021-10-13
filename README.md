@@ -4,29 +4,20 @@
  <p className='my-3 py-3'>Doctors clinic is a full-stack single-pageHealth service provider web app.</p>
  <ul>
  <li>
- 1 .  Login system with firebase, private routes and dashboard for admins and users .
+  Login system with firebase, private routes and dashboard for admins and users .
  </li>
  <li>
-2 . Users can get appointments and see their all apointments;
+Users can get appointments and see their all apointments;
  </li>
  <li>
- 3 . Admin can add services, update and delete services.
+Admin can add services, update and delete services.
  </li>
  <li>
- 4 . Admin can add new admins and see all apointments and patients;
+Admin can add new admins and see all apointments and patients;
  </li>
  </ul>
 </div>
- <div className='m-5 p-5'>
- <h2 className='my-3'>Front-end Technology :</h2>
- <ul>
- <li> React, React-Router-Dom
-</li>
- <li>React-Bootstrap</li>
- <li>CSS3</li>
- <li>Firebase Authentication</li>
- </ul>
- </div>
+ 
  <div className='m-5 p-5'>
  <h2 className='my-3'>Front-end Technology :</h2>
  <ul>
