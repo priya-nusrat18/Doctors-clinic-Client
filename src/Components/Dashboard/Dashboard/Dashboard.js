@@ -46,7 +46,9 @@ const Dashboard = () => {
               <img src={loggedInUser?.photoURL} alt="" />
               <h5>{loggedInUser.googleName}</h5>
             </div>
-            {isDoctor && (
+            
+           
+            {isDoctor ? 
               <>
                 <Switch>
                   <Route exact path={`${path}`}>
@@ -60,7 +62,12 @@ const Dashboard = () => {
                   </Route>
                 </Switch>
               </>
-            )}
+            :
+            <>
+             <Route  path={`${path}`}>
+                    <AppoinmentByDate></AppoinmentByDate>
+                  </Route>
+            </>}
           </Col>
         </div>
       </div>

@@ -1,72 +1,60 @@
-# Getting Started with Create React App
+<div>
+<h1 className='m-5 p-5'> Doctors Clinic</h1>
+ <h2 className='my-3'>About & Features</h2>
+ <p className='my-3 py-3'>Doctors clinic is a full-stack single-pageHealth service provider web app.</p>
+ <ul>
+ <li>
+ 1 .  Login system with firebase, private routes and dashboard for admins and users .
+ </li>
+ <li>
+2 . Users can get appointments and see their all apointments;
+ </li>
+ <li>
+ 3 . Admin can add services, update and delete services.
+ </li>
+ <li>
+ 4 . Admin can add new admins and see all apointments and patients;
+ </li>
+ </ul>
+</div>
+ <div className='m-5 p-5'>
+ <h2 className='my-3'>Front-end Technology :</h2>
+ <ul>
+ <li> React, React-Router-Dom
+</li>
+ <li>React-Bootstrap</li>
+ <li>CSS3</li>
+ <li>Firebase Authentication</li>
+ </ul>
+ </div>
+ <div className='m-5 p-5'>
+ <h2 className='my-3'>Front-end Technology :</h2>
+ <ul>
+ <li> React, React-Router-Dom
+</li>
+ <li>React-Bootstrap</li>
+ <li>CSS3</li>
+ <li>Firebase Authentication</li>
+ </ul>
+ </div>
+ <div className='m-5 p-5'>
+ <h2 className='my-3'>Back-end Technology :</h2>
+ <ul>
+ <li> Node
+</li>
+ <li>Express</li>
+ <li>MongoDB</li>
+ </ul>
+ </div>
+ <br>
+ <a href="https://hungry-wozniak-7130ad.netlify.app">Live Site</a>
+ <br>
+ &
+ <br>
+  <a href="https://github.com/priya-nusrat18/Doctors-clinic-server">Server Site Code</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ 
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Doctors-Clinic-Client-HomePage
-# Doctors-clinic-Client

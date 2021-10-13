@@ -28,22 +28,20 @@ const SideBar = ({url }) => {
     return (
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{height:"100vh"}}>
             <ul className="list-unstyled">
-            <li>
+            
+               {isDoctor ? 
+               <div> 
+                   <li>
                     <Link to="/" className="text-white">
                         <FontAwesomeIcon icon={faHome} /> <span>Home</span>
                     </Link>
                 </li>
-                {/* <li>
-                    <Link   to={`${url}/appoinmentByDate`} className="text-white">
-                        <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span> 
-                    </Link>
-                </li> */}
                 <li>
                     <Link  to={`${url}`} className="text-white">
                         <FontAwesomeIcon icon={faCalendar} /> <span>Appointment</span> 
                     </Link>
                 </li>
-               {isDoctor && <div> <li>
+                   <li>
                     <Link to={`${url}/allPatients`}  className="text-white">
                         <FontAwesomeIcon icon={faUsers} /> <span>All Patients</span>
                     </Link>
@@ -58,7 +56,22 @@ const SideBar = ({url }) => {
                     <Link to="/doctor/setting" className="text-white" >
                       <FontAwesomeIcon icon={faCog} /> <span>Setting</span>
                     </Link>
-                </li></div>}
+                </li></div>
+                :
+                <>
+                <li>
+                    <Link to="/" className="text-white">
+                        <FontAwesomeIcon icon={faHome} /> <span>Home</span>
+                    </Link>
+                </li>
+               
+                <li>
+                    <Link  to={`${url}`} className="text-white">
+                        <FontAwesomeIcon icon={faCalendar} /> <span>Appointment</span> 
+                    </Link>
+                </li>
+                </>
+                }
             </ul>
             <div>
                 <Link to="/" className="text-white"><FontAwesomeIcon icon={faSignOutAlt} /> <span>Logout</span></Link>
