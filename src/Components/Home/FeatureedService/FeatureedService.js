@@ -5,8 +5,8 @@ import Featureed from '../../../image/featured.png'
 const FeatureedService = () => {
     return (
         <section className="features-service pb-0 pb-md-5 my-5">
-        <Container className="mb-5">
-            <Row className="mb-5">
+        <Container className="mb-5 oveflow-hidden">
+            <Row className="mb-5 oveflow-hidden">
                 <Col md={5} sm={12} className="mb-4 m-md-0">
                     <img className="img-fluid Featureed-img" src={Featureed} alt="" />
                 </Col>

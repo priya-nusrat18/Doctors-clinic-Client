@@ -1,5 +1,4 @@
 import React from 'react';
-
 import wilson from '../../../image/Ellipse 1.png'
 import ema from '../../../image/Ellipse 2.png'
 import aliza from '../../../image/Ellipse 3.png'
@@ -34,7 +33,7 @@ const Testimonials = () => {
                    <h5 className="text-primary text-uppercase">Testimonial</h5>
                    <h1>What Our Patients <br/> Says </h1>
                </div>
-               <div className="row  mt-5">
+               <div className="row  my-3">
                     {
                         TestimonialsData.map(testimonial => <Testimonial testimonial={testimonial} key={testimonial.name}/>)
                     }

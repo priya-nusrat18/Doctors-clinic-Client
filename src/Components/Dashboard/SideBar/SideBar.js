@@ -1,11 +1,10 @@
-import React , {useState , useEffect}  from 'react';
-import { Link } from 'react-router-dom';
-import './SideBar.css'
-import { UserContext } from '../../../App';
-import { useContext } from 'react';
-
+import { faCalendar, faCog, faHome, faPlus, faSignOutAlt, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog,faPlus, faSignOutAlt, faCalendar, faGripHorizontal, faUsers , faHome} from '@fortawesome/free-solid-svg-icons';
+import React, { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { UserContext } from '../../../App';
+import './SideBar.css';
+
 // import {  faFileAlt } from '@fortawesome/free-regular-svg-icons'
 
 const SideBar = ({url }) => {
@@ -14,7 +13,7 @@ const SideBar = ({url }) => {
     const [isDoctor , setIsDoctor]  = useState(false)
 
     useEffect(() => {
-        fetch('https://peaceful-sierra-17047.herokuapp.com/isAdmin' , { 
+        fetch('https://doctors-portall.herokuapp.com/isAdmin' , { 
             method: 'POST',
             headers: { 
                 'content-type': 'application/json'
@@ -26,7 +25,7 @@ const SideBar = ({url }) => {
     }, [])
 
     return (
-        <div className="sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4" style={{height:"100vh"}}>
+        <div className="sidebar d-flex flex-column justify-content-between py-5" style={{height:"100vh"}}>
             <ul className="list-unstyled">
             
                {isDoctor ? 

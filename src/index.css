@@ -11,3 +11,86 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media screen and (max-width:375px){
+  .align-self-center.ms-3.Featureed-content.col-md-6.col-sm-12 {
+    margin-left: 0 !important;
+  }
+  h1{
+    font-size: 23px !important;
+  }
+  .react-calendar {
+    margin-left: 0px !important;
+}
+img.img-fluid.app-img.pe-5 {
+  padding-right: 0 !important;
+}
+}
+@media screen and (max-width:425px){
+  .align-self-center.ms-3.Featureed-content.col-md-6.col-sm-123 {
+    margin-left: 0 !important;
+  }
+  h1{
+    font-size: 23px !important;
+  }
+  img.img-fluid.app-img.pe-5 {
+    display: none;
+}
+.react-calendar {
+  width: 100% !important;
+}
+.user-area{
+  display: none !important;
+}
+.row.dashboard-box {
+  width: 100% !important;
+   margin: 0px !important;
+   padding: 0px !important;
+}
+}
+@media screen and (max-width:576px){
+  .row.info-row.w-75 {
+    display: none;
+}
+p.text-secondary {
+  padding: 20px;
+}
+.sidebar.d-flex.flex-column.justify-content-between.py-5{
+  position:unset !important;
+}
+.user-area {
+  display:  none !important;
+}
+.react-calendar {
+  border: none;
+  margin: 87px 0 !important;
+}
+h2.pl-5.text-dasboard-title {
+  display: block !important;
+}
+}
+@media screen and (max-width:768px){
+  .table-wrap {
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+}
+@media screen and (max-width:1024px){
+  .card-wrapper.mb-2 > p {
+    overflow: hidden;
+    height: 70px;
+}
+
+h5.service-title.mt-3.mb-3 {
+    height: 26px;
+    overflow: hidden;
+}
+.info-title {
+  height: 73px;
+  overflow: hidden;
+}
+.btn{
+  font-size: 12px !important;
+}
+}

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SideBar from '../../Dashboard/SideBar/SideBar';
 
 const AddDoctor = () => {
 
@@ -27,7 +26,7 @@ const AddDoctor = () => {
         formData.append('name', info.name)
         formData.append('email', info.email)
 
-        fetch('https://peaceful-sierra-17047.herokuapp.com/addADoctor', {
+        fetch('https://doctors-portall.herokuapp.com/addADoctor', {
             method: 'POST',
             body: formData
         })
@@ -40,10 +39,10 @@ const AddDoctor = () => {
             })
     }
     return (
-        <section className="dashboard-container">
+        <section className="container overflow-hidden">
              <h2 class='pl-5 text-dasboard-title'>Add  Doctor</h2>
-             <div className="row dashboard-box">
-             <form onSubmit={handleSubmit}>
+             <div className="row">
+             <form className="p-5" onSubmit={handleSubmit}>
                     <div className="form-group">
                         <label htmlFor="exampleInputEmail1">Email address</label>
                         <input onBlur={handleBlur} type="email" className="form-control" name="email" placeholder="Enter email" />

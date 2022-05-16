@@ -1,6 +1,6 @@
 import React from 'react';
-import Modal from 'react-modal';
 import { useForm } from "react-hook-form";
+import Modal from 'react-modal';
 
 const customStyles = {
     content: {
@@ -23,7 +23,7 @@ const AppoinmentForm = ({ modalIsOpen, closeModal, appointmentOn, date }) => {
         data.date = date;
         data.created = new Date();
         
-        fetch('https://peaceful-sierra-17047.herokuapp.com/addAppointment', {
+        fetch('https://doctors-portall.herokuapp.com/addAppointment', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(data)

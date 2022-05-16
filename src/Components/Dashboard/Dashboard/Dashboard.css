@@ -25,19 +25,26 @@
   .support-bg{
     background: #1D3949;
   }
-  .dashboard-container{
+  /* .dashboard-container{
     background: #f4f7fc;
     min-height: 100vh;
     display: block;
     overflow: hidden;
     padding-top: 30px;
-  }
- .row.dashboard-box{
+  } */
+ /* .row.dashboard-box{
     width: 90%;
       margin: 35px;
       background-color: white;
       padding: 30px 50px;
       border-radius: 10px;
       box-shadow: 0px 0px 12px 1px lightgray;
+  } */
+
+  @media screen and (max-width: 768px){
+    .user-area {
+      margin: 0 !important;
+  }
+    
   }
  

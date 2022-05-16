@@ -6,3 +6,6 @@
     background: transparent;
     border: 0;
 }
+.card.py-4.ms-3.shadow-sm.mb-2 {
+    border: 1px solid #ddd !important;
+}

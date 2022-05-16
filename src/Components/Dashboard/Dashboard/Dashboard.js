@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
+import { Col } from "react-bootstrap";
+import { Route, Switch, useRouteMatch } from "react-router";
+import { UserContext } from "../../../App";
+import AddDoctor from "../../AddDoctor/AddDoctor/AddDoctor";
+import AllPateints from "../../AllPateints/AllPateints/AllPateints";
+import AppoinmentByDate from "../AppoinmentByDate/AppoinmentByDate";
 import SideBar from "../SideBar/SideBar";
 import "./Dashboard.css";
-import AppoinmentByDate from "../AppoinmentByDate/AppoinmentByDate";
-import { UserContext } from "../../../App";
-import { useContext } from "react";
-import { Col } from "react-bootstrap";
-import { Switch, Route, useRouteMatch } from "react-router";
-import AllPateints from "../../AllPateints/AllPateints/AllPateints";
-import AddDoctor from "../../AddDoctor/AddDoctor/AddDoctor";
 
 const Dashboard = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -16,7 +15,7 @@ const Dashboard = () => {
   const [isDoctor, setIsDoctor] = useState(false);
 
   useEffect(() => {
-    fetch("https://peaceful-sierra-17047.herokuapp.com/isAdmin", {
+    fetch("https://doctors-portall.herokuapp.com/isAdmin", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -36,12 +35,12 @@ const Dashboard = () => {
   console.log(loggedInUser);
   return (
     <section style={containerStyle}>
-      <div className="d-block overflow-hidden w-100 pr ">
+      <div className="p-0 overflow-hidden pr container-fluid">
         <div className="row">
-          <div className="col-md-2 col-sm-2 col-2">
+          <div className="col-md-2 col-sm-12 col-12">
             <SideBar url={url} path={path}></SideBar>
           </div>
-          <Col md={10} sm={10} xs={10} className="pl-0 pr-0 ">
+          <Col md={10} sm={12} xs={12} className="">
             <div className="user-area ">
               <img src={loggedInUser?.photoURL} alt="" />
               <h5>{loggedInUser.googleName}</h5>
